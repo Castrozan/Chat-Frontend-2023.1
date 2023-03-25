@@ -14,38 +14,27 @@
     <header>
       <h2 id="chat-title">Atendimento on-line</h2>
     </header>
-    <div class="messages-list">
+    <div class="screen-messages">
       <div class="message-item">
         <div class="msg-user"><strong>Atendente diz:</strong></div>
         <div class="msg-chat">Olá Sr. Blabla</div>
       </div>
-      <div class="message-item">
-        <div class="msg-user"><strong>Atendente diz:</strong></div>
-        <div class="msg-chat">Blabla blabla blabla?</div>
-      </div>
-      <div class="message-item message-user">
-        <div class="msg-user"><strong>Você diz:</strong></div>
-        <div class="msg-chat">Blablaaaa Bla</div>
-      </div>
-      <div class="message-item message-user">
-        <div class="msg-user"><strong>Você diz:</strong></div>
-        <div class="msg-chat">Bla blabla Ba</div>
-      </div>
     </div>
     <form class="message" id="form-chat-send" action="index.html" method="post">
-      <input style="width: 350px;
+      <input id="chat-text-input" style="width: 350px;
                    border: 3px solid black; 
                    height: 32px;" placeholder="Digite sua mensagem..." type="text" id="message" name="message">
-      <button style="height: 32px;
-                    width: 120px;
-                    color: rgb(5, 140, 5);
-                    font-weight: bold;
-                    font-family: Comic Sans MS;
-                    border: 3px solid black;
-                    background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) 2px, transparent 2px, transparent 6px);
-                    background-size: 8px 8px; " type="submit">ENVIAR</button>
+      <button id="chat-button" style="height: 32px;
+                                      width: 120px;
+                                      color: rgb(5, 140, 5);
+                                      font-weight: bold;
+                                      font-family: Comic Sans MS;
+                                      border: 3px solid black;
+                                      background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) 2px, transparent 2px, transparent 6px);
+                                      background-size: 8px 8px; ">ENVIAR</button>
     </form>
   </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
