@@ -9,7 +9,7 @@ btn.addEventListener("click", (e) => {
     //inputMsg.style.cssText = 'width: 380px;margin-top: 3%; margin-left: 50px;';
 
     let txtInput = inputMsg.value;
-    if (inputMsg.value != " ") {
+    if (inputMsg.value != " " || inputMsg.value != "") {
         console.log(txtInput);
     
         const messageItem = document.createElement("div");
@@ -19,7 +19,7 @@ btn.addEventListener("click", (e) => {
         msgUser.style.cssText = 'margin-left: 150px';
 
         const nameTitle = document.createElement("strong");
-        nameTitle.style.cssText = 'margin-left: 150px;font-family: "Comic Sans MS";';
+        nameTitle.style.cssText = 'margin-left: 140px;font-family: "Comic Sans MS";';
         const voceDiz = document.createTextNode("Você diz: ");
         nameTitle.appendChild(voceDiz);
 
@@ -38,7 +38,7 @@ btn.addEventListener("click", (e) => {
         
         display_chat.appendChild(messageItem);
 
-        inputMsg.value = " "; 
+        inputMsg.value = ""; 
     }
     
 });
